@@ -1,0 +1,101 @@
+/* General body styles */ 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container for content */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+    font-size: 36px;
+    color: #d84848;  /* Primary color changed */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Paragraph and general text styling */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Recommendation list styling */
+.recommendation-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.recommendation-list li {
+    background-color: #f8e1e1; /* Light red background for items */
+    border-left: 5px solid #d84848;  /* Left border in primary color changed */
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.recommendation-list li:hover {
+    background-color: #d84848;  /* Hover effect changed */
+    color: white;
+    transform: translateX(10px); /* Slightly move to the right */
+}
+
+/* Retry button styling */
+.retry-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #d84848;  /* Primary color changed */
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.retry-button:hover {
+    background-color: #a74040;  /* Darker shade for hover effect */
+    transform: translateY(-2px);  /* Button lifts slightly on hover */
+}
+
+/* For mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .recommendation-list li {
+        font-size: 16px;
+    }
+
+    .retry-button {
+        font-size: 16px;
+    }
+}
